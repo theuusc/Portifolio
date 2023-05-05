@@ -91,6 +91,10 @@ h2{
 
 /* Menu principal */
 
+a:hover {
+    background-color: green;
+}
+
 .menu {
     position: absolute;
     top: 28px;
