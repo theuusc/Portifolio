@@ -1,20 +1,52 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
-body{
+/*body{
     background-color: black;
     margin: 0;
     padding: 0;
     font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+}*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', Helvetica, sans-serif;
 }
+
+body{
+    height: 100vh;
+    background-color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+header{
+    color: rgb(109, 109, 109);
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
 
 /* Header */
 
 .header-container{
-    height: 50vh;
+    height: 30vh;
     width: 99vw;
-    background-color: black;
-    background-image: url('img/def.png');
+    background-color: rgb(5, 5, 5);
+    background-image: url('img/moldura.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -26,19 +58,7 @@ body{
     padding: 0 112px;
     position: relative;
 }
-
-h1{
-    font-size: 80px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-h2{
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
+ 
 
 /* Menu section */
 
@@ -170,8 +190,279 @@ a:hover {
     opacity: 1;
 }
 
-/* Cards */
 
+
+/* card */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    color: white;
+}
+
+ /* . */
+.card{
+    background-image: linear-gradient(#333, #333);
+    overflow: hidden;
+    border-radius: 26px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s;  
+}
+
+.card:hover{
+    background-image: linear-gradient(#672abf, #380e74);
+}
+
+ /* . */
+.card .img{
+    background-image: url("");
+    background-position: center;
+    background-size: cover;
+    width: 560px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    transition: all .5s;
+    z-index: 0;   
+    position: relative;     
+}
+
+.card:hover img{
+    opacity: 1;
+    width: 440px;
+}
+
+.card .img span{
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.card .content{
+    padding: 0 20px;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all .5s;
+    transform: translateY(30px);
+}
+
+.card:hover .content{
+    padding: 20px;
+    height: 260px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p{
+    margin: 0;
+}
+
+.card .content .title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card .content .desc{
+    font-size: 15px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card:hover .arrow{
+    transform: rotate(0);
+}
+
+.card .arrow{
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card .arrow span{
+    font-size: 24px;
+}
+
+/* footer */
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 320px) and (max-width: 915px){
+   
+.checkbox-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.checkbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+
+.checkbox .trace {
+    width: 55px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0);
+    position: fixed;
+}
+
+.checkbox .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
+    position: fixed;
+}
+
+.checkbox .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
+    position: fixed;
+}
+
+#toggle {
+    display: none;
+}
+   
+   
+    a:hover {
+        background-color: green;
+    }
+    
+    .menu {
+        position: absolute;
+        top: 28px;
+        right: 30px;
+        background-color: transparent;
+        height: 4px;
+        width: 10px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 0px white;
+        z-index: -1;
+        transition: 400ms ease-in-out 0s;
+    }
+    
+    .menu-itens {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transition: 400ms ease-in-out 0s;
+    }
+    
+    .menu-itens ul {
+        list-style-type: none;
+    }
+    
+    .menu-itens ul li a {
+        margin: 10px 0;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 50px;
+    }
+
+
+    #toggle:checked + .checkbox .trace:nth-child(1) {
+        transform: rotate(45deg);
+        top: 47px;
+    }
+    
+    #toggle:checked + .checkbox .trace:nth-child(2) {
+        transform: translate(-100px);
+        width: 30px;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    #toggle:checked + .checkbox .trace:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 48px;
+    }
+    
+    #toggle:checked + .checkbox {
+        background-color: green;
+        position: fixed;
+    }
+    
+    #toggle:checked ~ .menu {
+        box-shadow: 0px 0px 0px 150vmax black;
+        z-index: 1;
+        position: fixed;
+    }
+    
+    #toggle:checked ~ .menu-itens {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    
 .container {
     height: auto;
     width: 100%;
@@ -186,97 +477,110 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
-}
-
-.card {
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    margin: 3rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: green;
-    background-image: url("");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: grayscale(0.5);
-    color: black;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-
-.card-text {
-    width: 70%;
-    letter-spacing: 1px;
-    color: rgb(109, 109, 109);
-    font-size: 30px;
-}
-
-.card-wrapper {
-    text-align: center;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
-.card-wrapper::before {
-    content: '';
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    display: block;
-    border: 1px solid white;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-}
+    .card{
+        width: 170px;
+        height: 170px;
+        border-radius: 100%;
+        margin: 3rem 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: green;
+        background-image: url("");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: grayscale(0.5);
+        color: black;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        flex-direction: column;
+    }
 
-.card-wrapper h2 {
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 0;
-    transition: 0.5s ease-in-out;
-}
+    .card-text{
+        height: 100%;
+        width: 100%;
+        letter-spacing: 1px;
+        color: rgb(109, 109, 109);
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 70px;
+        margin-top: 30px;
+        
+    }
 
-.card-wrapper p {
-    font-size: 0;
-    visibility: visible;
-    opacity: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.5s ease-in-out;
-}
+    .card-wrapper h2{
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin: 0;
+        transition: 0.5s ease-in-out;
+        flex-direction: column;
+    }
 
-.card:hover {
-    filter: unset;
-}
+    .card-wrapper::before {
+        content: '';
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: block;
+        border: 1px solid white;
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+        flex-direction: column;
+    }
+    
+    .card-wrapper h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin: 0;
+        transition: 0.5s ease-in-out;
+        flex-direction: column;
+    }
+    
+    .card-wrapper p {
+        font-size: 0;
+        visibility: visible;
+        opacity: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 0.5s ease-in-out;
+        flex-direction: column;
+    }
+    
+    .card:hover {
+        filter: unset;
+        flex-direction: column;
+    }
+    
+    .card:hover > .card-wrapper::before {
+        height: 150px;
+        width: 150px;
+        opacity: 1;
+        flex-direction: column;
+    }
+    
+    .card:hover > .card-wrapper p {
+        opacity: 1;
+        visibility: visible;
+        font-size: 14px;
+        flex-direction: column;
+    }
 
-.card:hover > .card-wrapper::before {
-    height: 200px;
-    width: 200px;
-    opacity: 1;
-}
-
-.card:hover > .card-wrapper p {
-    opacity: 1;
-    visibility: visible;
-    font-size: 14px;
-}
-
-/* footer */
-
-.footer {
-    height: 200px;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 50px;
+    footer {
+        height: 200px;
+        width: 90%;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 50px;
+    }
 }
