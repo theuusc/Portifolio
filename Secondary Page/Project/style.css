@@ -498,7 +498,7 @@ img:hover{
     }
     
     #toggle:checked + .checkbox {
-        background-color: green;
+        background-color: white;
         position: fixed;
         align-items: left;
     }
