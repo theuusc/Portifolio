@@ -1,7 +1,9 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+/* fonte usada */
 
-html, body{
+html,
+body {
     height: 100%;
     color: white;
     margin: 0;
@@ -9,20 +11,20 @@ html, body{
     font-family: 'Outfit', sans-serif;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
 }
 
 /* Header */
 
-.header-container{
+.header-container {
     height: 100vh;
     width: 99vw;
     background-color: black;
     background-image: url('img/moldura.png');
     background-repeat: no-repeat;
-    background-position:  right;
+    background-position: right;
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -33,19 +35,19 @@ body{
     position: relative;
 }
 
-h1{
+h1 {
     font-size: 80px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
-h2{
+h2 {
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
-.social-media{
+.social-media {
     margin-top: 1rem;
     display: flex;
 }
@@ -64,17 +66,19 @@ h2{
 
 }
 
+
+/* Menu section */
+
+
 a:hover {
     background-color: green;
 }
-
-/* Menu section */
 
 .checkbox-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 .checkbox {
@@ -162,34 +166,34 @@ a:hover {
 
 /* Menu Animation */
 
-#toggle:checked + .checkbox .trace:nth-child(1) {
+#toggle:checked+.checkbox .trace:nth-child(1) {
     transform: rotate(45deg);
     top: 47px;
 }
 
-#toggle:checked + .checkbox .trace:nth-child(2) {
+#toggle:checked+.checkbox .trace:nth-child(2) {
     transform: translate(-100px);
     width: 30px;
     visibility: hidden;
     opacity: 0;
 }
 
-#toggle:checked + .checkbox .trace:nth-child(3) {
+#toggle:checked+.checkbox .trace:nth-child(3) {
     transform: rotate(-45deg);
     top: 48px;
 }
 
-#toggle:checked + .checkbox {
+#toggle:checked+.checkbox {
     background-color: green;
     position: fixed;
 }
 
-#toggle:checked ~ .menu {
+#toggle:checked~.menu {
     box-shadow: 0px 0px 0px 150vmax black;
     z-index: 1;
 }
 
-#toggle:checked ~ .menu-itens {
+#toggle:checked~.menu-itens {
     visibility: visible;
     opacity: 1;
 }
@@ -279,13 +283,13 @@ a:hover {
     filter: unset;
 }
 
-.card:hover > .card-wrapper::before {
+.card:hover>.card-wrapper::before {
     height: 360px;
     width: 360px;
     opacity: 1;
 }
 
-.card:hover > .card-wrapper p {
+.card:hover>.card-wrapper p {
     opacity: 1;
     visibility: visible;
     font-size: 14px;
@@ -293,7 +297,7 @@ a:hover {
 
 /* footer */
 
-.footer{
+.footer {
     height: 100vh;
     width: 100%;
     background-color: black;
@@ -307,20 +311,20 @@ a:hover {
 
 /* mobile */
 
-@media(min-width: 320px) and (max-width: 915px){
-    html, body{
-        height: 100%;
-        color: white;
-        margin: 0;
-        padding: 0;
-        font-family: 'Outfit', sans-serif;
-    }
-    body{
-        display: flex;
-        flex-direction: column;
+@media(min-width: 320px) and (max-width: 915px) {
+
+body {
+    height: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
     }
 
-    .footer{
+
+    .footer {
         height: 100vh;
         width: 100%;
         background-color: black;
@@ -328,16 +332,17 @@ a:hover {
         align-items: top center;
         justify-content: center;
         color: white;
-        font-size: 50px;
+        font-size: 25px;
     }
 
-    .header-container{
+
+    .header-container {
         background-color: black;
         height: 50vh;
         width: 100vw;
         background-image: url('img/moldura.png');
         background-repeat: no-repeat;
-        background-position:  center top;
+        background-position: center top;
         background-size: 200px;
         display: flex;
         flex-direction: column;
@@ -346,18 +351,18 @@ a:hover {
         box-sizing: border-box;
         padding: 0 80px;
         position: relative;
-        
+
     }
 
-    h1{
+    h1 {
         margin-top: 40%;
         font-size: 20px;
         justify-content: center;
         position: center center;
-        
+
     }
 
-    h2{
+    h2 {
         text-align: left;
         font-size: 15px;
         text-transform: uppercase;
@@ -365,14 +370,14 @@ a:hover {
         color: white;
     }
 
-    .social-media{
+    .social-media {
 
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
-        
-}
+
+    }
 
     .social-media a {
         text-decoration: none;
@@ -386,107 +391,108 @@ a:hover {
         justify-content: left;
         transition: .5s ease-in-out;
 
-}
+    }
 
-/* bubbles */
+    /* bubbles */
 
-.container {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    .container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 
-.card-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
-}
+    .card-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+    }
 
-.card {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    margin: 3rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: green;
-    background-image: url("");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: grayscale(0.5);
-    color: black;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
+    .card {
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        margin: 3rem 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: green;
+        background-image: url("");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: grayscale(0.5);
+        color: black;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
 
-.card-text {
-    width: 55%;
-    letter-spacing: 0px;
-    color: rgb(109, 109, 109);
-    font-size: 13px;
-    text-align: justify;
-}
+    .card-text {
+        width: 60%;
+        padding-top: 60px;
+        letter-spacing: 0px;
+        color: rgb(109, 109, 109);
+        font-size: 10px;
+        text-align: left;
+    }
 
-.card-wrapper {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+    .card-wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
 
-.card-wrapper::before {
-    content: '';
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    display: block;
-    border: 1px solid white;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-}
+    .card-wrapper::before {
+        content: '';
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: block;
+        border: 1px solid white;
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+    }
 
-.card-wrapper h2 {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: 0;
-    transition: 0.5s ease-in-out;
-}
+    .card-wrapper h2 {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin: 0;
+        transition: 0.5s ease-in-out;
+    }
 
-.card-wrapper p {
-    font-size: 0;
-    visibility: visible;
-    opacity: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.5s ease-in-out;
-}
+    .card-wrapper p {
+        font-size: 0;
+        visibility: visible;
+        opacity: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 0.5s ease-in-out;
+    }
 
-.card:hover {
-    filter: unset;
-}
+    .card:hover {
+        filter: unset;
+    }
 
-.card:hover > .card-wrapper::before {
-    height: 135px;
-    width: 135px;
-    opacity: 1;
-}
+    .card:hover>.card-wrapper::before {
+        height: 135px;
+        width: 135px;
+        opacity: 1;
+    }
 
-.card:hover > .card-wrapper p {
-    opacity: 1;
-    visibility: visible;
-    font-size: 12px;
-}
+    .card:hover>.card-wrapper p {
+        opacity: 1;
+        visibility: visible;
+        font-size: 8px;
+    }
 
-/* menu */
+    /* menu */
 
     a:hover {
         background-color: green;
@@ -496,9 +502,9 @@ a:hover {
         display: flex;
         justify-content: space-around;
         align-items: left;
-        
+
     }
-    
+
     .checkbox {
         height: 100px;
         width: 100px;
@@ -510,7 +516,7 @@ a:hover {
         z-index: 9999;
         transition: 400ms ease-in-out 0s;
     }
-    
+
     .checkbox .trace {
         width: 55px;
         height: 5px;
@@ -519,28 +525,28 @@ a:hover {
         border-radius: 4px;
         transition: 0.5s ease-in-out;
     }
-    
+
     .checkbox .trace:nth-child(1) {
         top: 26px;
         transform: rotate(0);
     }
-    
+
     .checkbox .trace:nth-child(2) {
         top: 46px;
         transform: rotate(0);
     }
-    
+
     .checkbox .trace:nth-child(3) {
         top: 66px;
         transform: rotate(0);
     }
-    
+
     #toggle {
         display: none;
     }
-    
+
     /* Menu principal */
-    
+
     .menu {
         position: absolute;
         top: 28px;
@@ -553,7 +559,7 @@ a:hover {
         z-index: -1;
         transition: 400ms ease-in-out 0s;
     }
-    
+
     .menu-itens {
         position: absolute;
         top: 0;
@@ -568,11 +574,11 @@ a:hover {
         visibility: hidden;
         transition: 400ms ease-in-out 0s;
     }
-    
+
     .menu-itens ul {
         list-style-type: none;
     }
-    
+
     .menu-itens ul li a {
         margin: 10px 0;
         color: white;
@@ -581,42 +587,41 @@ a:hover {
         letter-spacing: 4px;
         font-size: 50px;
     }
-    
+
     /* Menu Animation */
-    
-    #toggle:checked + .checkbox .trace:nth-child(1) {
+
+    #toggle:checked+.checkbox .trace:nth-child(1) {
         transform: rotate(45deg);
         top: 47px;
     }
-    
-    #toggle:checked + .checkbox .trace:nth-child(2) {
+
+    #toggle:checked+.checkbox .trace:nth-child(2) {
         transform: translate(-100px);
         width: 30px;
         visibility: hidden;
         opacity: 0;
     }
-    
-    #toggle:checked + .checkbox .trace:nth-child(3) {
+
+    #toggle:checked+.checkbox .trace:nth-child(3) {
         transform: rotate(-45deg);
         top: 48px;
     }
-    
-    #toggle:checked + .checkbox {
+
+    #toggle:checked+.checkbox {
         background-color: green;
         position: fixed;
         align-items: left;
     }
-    
-    #toggle:checked ~ .menu {
+
+    #toggle:checked~.menu {
         box-shadow: 0px 0px 0px 280vmax black;
         z-index: 1;
     }
-    
-    #toggle:checked ~ .menu-itens {
+
+    #toggle:checked~.menu-itens {
         visibility: visible;
         opacity: 1;
         position: fixed;
     }
-    
-}
 
+}
