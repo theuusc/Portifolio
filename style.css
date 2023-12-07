@@ -2,19 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 /* fonte usada */
 
-html,
 body {
     height: 100%;
     color: white;
     margin: 0;
     padding: 0;
     font-family: 'Outfit', sans-serif;
-}
-
-body {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Header */
 
@@ -300,18 +297,136 @@ a:hover {
 .footer {
     height: 100vh;
     width: 100%;
-    background-color: black;
-    display: flex;
+    background-color: #0e0c0c;
+    /*display: flex;*/
     align-items: top center;
     justify-content: center;
     color: white;
-    font-size: 50px;
+    font-size: 35px;
 }
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer-content{
+    background-color: #171717;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer-contacts h2{
+    margin-bottom: 0.75rem;
+}
+
+#footer-social-media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer-social-media .footer-link{
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+#footer-social-media .footer-link i{
+    font-size: 1.25rem;
+}
+
+#footer-social-media .footer-link:hover{
+    opacity: 0.8;
+}
+
+#github{
+    background-color: black;
+}
+
+#linkedin{
+    background-color: black;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+
+.footer-list .footer-link{
+    color: #a8a29e;
+}
+
+.footer-list .footer-link:hover{
+    color: white;
+    transition: all 0.4s;
+}
+
+#footer-subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#footer-subscribe p{
+    color: #a8a29e;
+}
+
+#input-group{
+    display: flex;
+    align-items: center;
+    background-color: #a8a29e;
+    border-radius: 4px;
+}
+
+#input-group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input-group button{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+#input-group button:hover{
+    opacity: 0.8;
+}
+
+#footer-copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #0e0c0c;
+    font-size: 2rem;
+    /*font-size: 0.9rem;*/
+    padding: 7rem;
+    /*padding: 1.5rem;*/
+    font-weight: 100;
+}
+
+
 
 
 /* mobile */
 
-@media(min-width: 320px) and (max-width: 915px) {
+@media (min-width: 320px) and (max-width: 915px) {
 
 body {
     height: 100%;
@@ -324,7 +439,7 @@ body {
     }
 
 
-    .footer {
+   /* .footer {
         height: 100vh;
         width: 100%;
         background-color: black;
@@ -333,7 +448,12 @@ body {
         justify-content: center;
         color: white;
         font-size: 25px;
-    }
+    }*/
+
+ #footer-content{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+ }
 
 
     .header-container {
@@ -624,4 +744,12 @@ body {
         position: fixed;
     }
 
+}
+
+
+@media screen and (max-width: 426px){
+    #footer-content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
 }
