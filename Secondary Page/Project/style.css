@@ -35,7 +35,6 @@ body{
 
 .container{
     display: block;
-    background-color: #008000;
     width: 70%;
     box-shadow: 0.1px 0.1px 1px #000;
     margin: 0 auto;
@@ -75,7 +74,7 @@ h3{
     text-align: center;
 }
 
-/* Formulário dos projetos */
+/* Projects Form */
 
 #grid-container{
     margin-top: 5px;
@@ -261,12 +260,12 @@ a:hover {
 }
 
 #toggle:checked + .checkbox {
-    background-color: green;
+    background-color: white;
     position: fixed;
 }
 
 #toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 150vmax black;
+    box-shadow: 0px 0px 0px 300vmax black;
     z-index: 1;
 }
 
@@ -275,22 +274,211 @@ a:hover {
     opacity: 1;
 }
 
-
-.texto-rodape{
-    font-family: arial;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 1.6rem;
-    padding-bottom: 10px;
-}
-
 /* footer */
 
 .footer {
+    color: white;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer-content{
+    background-color: #171717;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*padding: 20rem 0rem 0rem 0rem;*/
+    padding: 12.5rem 0rem 5rem 0rem;
+}
+
+#footer-contacts, #footer-social-media, #footer-link {
+    margin: auto; /* Alinha esses elementos na mesma altura que "page" e "contact me" */
+}
+
+#footer-contacts h2{
+    margin-top: -12rem;
+    padding-right: 6.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: white;
+}
+
+#footer-contacts p{
+    font-size: 3.5rem;
+    padding-left: 0rem;
+    padding-top: 3.5rem;
+    color: white;
+}
+
+#footer-social-media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    padding-left: 0rem;
+}
+
+#footer-social-media .footer-link{
+    height: 4.5rem;
+    width: 4.5rem;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+#footer-social-media .footer-link i{
+    font-size: 2.25rem;
+}
+
+#footer-social-media .footer-link:hover{
+    opacity: 0.8;
+}
+
+#github{
+    background-color: black;
+}
+
+#linkedin{
+    background-color: black;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    color: white;
+    padding-right: 20rem;
+}
+
+.footer-list h3{
+   padding-right: 15rem;
+   margin-bottom: 4rem;
+}
+
+.footer-list .footer-link{
+    color: #a8a29e;
+    font-size: 35px;
+}
+
+.footer-list .footer-link:hover{
+    color: white;
+    transition: all 0.4s;
+}
+
+#footer-subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 4rem;
+}
+
+#footer-subscribe h3{
+    color: white;
+    font-size: 4rem;
+    padding-right: 29rem;
+    padding-bottom: 3rem;
+}
+
+#input-group{
+    display: flex;
+    align-items: center;
+    background-color: #a8a29e;
+    border-radius: 4px;
+    width: 47rem;
+}
+
+#input-group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input-group button{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+#input-group button:hover{
+    opacity: 0.8;
+}
+
+#footer-copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #0e0c0c;
+    font-size: 3rem;
+    /*padding: 0rem 0rem 27rem 0rem;*/
+    padding: 13.5rem 0;
+    align-items: center;
+    font-weight: 100;
+}
+
+#footer-copyright h4{
+    color: white;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 436px){
+
+/* Projects Form */
+
+    #grid-container {
+        margin-top: 0px;
+        background-color: black;
+        padding: 10px;
+        overflow-x: auto;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 10px;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+
+    
+    /* Menu Animation */
+    
+   
+    #toggle:checked + .checkbox {
+        background-color: white;
+        position: fixed;
+        align-items: left;
+    }
+    
+    #toggle:checked ~ .menu {
+        box-shadow: 0px 0px 0px 1000vmax black;
+        z-index: 1;
+    }
+    
+
+
+/* Footer */
+    
+#footer-content{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+ }
+ .footer {
     height: 100vh;
     width: 100%;
     background-color: #0e0c0c;
-    /*display: flex;*/
     align-items: top center;
     justify-content: center;
     color: white;
@@ -310,6 +498,7 @@ a:hover {
 
 #footer-contacts h2{
     margin-bottom: 0.75rem;
+    padding-right: 12rem;
 }
 
 #footer-social-media{
@@ -350,6 +539,8 @@ a:hover {
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
+    color: white;
+    padding-right: 20rem;
 }
 
 
@@ -366,10 +557,12 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    font-size: 4rem;
 }
 
-#footer-subscribe p{
-    color: #a8a29e;
+#footer-subscribe h3{
+    color: white;
+    font-size: 6rem;
 }
 
 #input-group{
@@ -406,217 +599,20 @@ a:hover {
     display: flex;
     justify-content: center;
     background-color: #0e0c0c;
-    font-size: 2rem;
+    font-size: 4rem;
     /*font-size: 0.9rem;*/
-    padding: 7rem;
+    padding: 20rem;
     /*padding: 1.5rem;*/
     font-weight: 100;
 }
 
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 270px) and (max-width: 915px) {
-    /* Formulário dos projetos */
-    #grid-container {
-        margin-top: 0px;
-        background-color: black;
-        padding: 10px;
-        overflow-x: auto;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-gap: 10px;
-        max-width: 1500px;
-        margin: 0 auto;
-    }
-
-
-.imagem-grid{
-    width: 18rem;
-    height: 10rem;
-    border-radius: 20px;
-    transition: 300ms ease-in-out;
-}
-
-
-img:hover{
-    transform: translate(2%, 2%) scale(1.3) rotate(2deg);
-    border: solid rgba(255, 255, 255, 1.0);
-    box-shadow: 1px 1px 3px #000;
-}
-
-
- /* all menu */   
-    a:hover {
-        background-color: green;
-    }
-
-    .checkbox-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: left;
-        
-    }
-    
-    .checkbox {
-        height: 100px;
-        width: 100px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        justify-content: left;
-        cursor: pointer;
-        z-index: 9999;
-        transition: 400ms ease-in-out 0s;
-    }
-    
-    .checkbox .trace {
-        width: 55px;
-        height: 5px;
-        background-color: black;
-        position: absolute;
-        border-radius: 4px;
-        transition: 0.5s ease-in-out;
-    }
-    
-    .checkbox .trace:nth-child(1) {
-        top: 26px;
-        transform: rotate(0);
-    }
-    
-    .checkbox .trace:nth-child(2) {
-        top: 46px;
-        transform: rotate(0);
-    }
-    
-    .checkbox .trace:nth-child(3) {
-        top: 66px;
-        transform: rotate(0);
-    }
-    
-    #toggle {
-        display: none;
-    }
-    
-    /* Menu principal */
-    
-    .menu {
-        position: absolute;
-        top: 28px;
-        right: 30px;
-        background-color: transparent;
-        height: 4px;
-        width: 10px;
-        border-radius: 50%;
-        box-shadow: 0px 0px 0px 0px white;
-        z-index: -1;
-        transition: 400ms ease-in-out 0s;
-    }
-    
-    .menu-itens {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: left top;
-        align-items: left top;
-        z-index: 2;
-        opacity: 0;
-        visibility: hidden;
-        transition: 400ms ease-in-out 0s;
-    }
-    
-    .menu-itens ul {
-        list-style-type: none;
-    }
-    
-    .menu-itens ul li a {
-        margin: 10px 0;
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        font-size: 50px;
-    }
-    
-    /* Menu Animation */
-    
-    #toggle:checked + .checkbox .trace:nth-child(1) {
-        transform: rotate(45deg);
-        top: 47px;
-    }
-    
-    #toggle:checked + .checkbox .trace:nth-child(2) {
-        transform: translate(-100px);
-        width: 30px;
-        visibility: hidden;
-        opacity: 0;
-    }
-    
-    #toggle:checked + .checkbox .trace:nth-child(3) {
-        transform: rotate(-45deg);
-        top: 48px;
-    }
-    
-    #toggle:checked + .checkbox {
-        background-color: white;
-        position: fixed;
-        align-items: left;
-    }
-    
-    #toggle:checked ~ .menu {
-        box-shadow: 0px 0px 0px 550vmax black;
-        z-index: 1;
-    }
-    
-    #toggle:checked ~ .menu-itens {
-        visibility: visible;
-        opacity: 1;
-        position: fixed;
-    }
-
-
-/* Footer */
-    
 #footer-content{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
- }
-
-
-
-   /* .footer{
-        height: 100vh;
-        width: 100%;
-        background-color: black;
-        display: flex;
-        align-items: top center;
-        justify-content: center;
-        color: white;
-        font-size: 50px;
-        position: relative;
-    }*/
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+}
 }
 
 
 
 
 
-@media screen and (max-width: 426px){
-    #footer-content{
-        grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 2rem;
-    }
-}
