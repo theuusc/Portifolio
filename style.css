@@ -64,7 +64,7 @@ h2 {
 }
 
 
-/* Menu section */
+/* Hamburguer Menu */
 
 
 a:hover {
@@ -118,7 +118,7 @@ a:hover {
     display: none;
 }
 
-/* Menu principal */
+/* Menu itens */
 
 .menu {
     position: absolute;
@@ -195,7 +195,7 @@ a:hover {
     opacity: 1;
 }
 
-/* Cards */
+/* Bubbles */
 
 .container {
     height: auto;
@@ -424,7 +424,7 @@ a:hover {
 
 
 
-/* mobile */
+/* Mobile */
 
 @media (min-width: 320px) and (max-width: 915px) {
 
