@@ -293,7 +293,7 @@ a:hover {
 }
 
 #footer-contacts, #footer-social-media, #footer-link {
-    margin: auto; /* Alinha esses elementos na mesma altura que "page" e "contact me" */
+    margin: auto; /* Align elements on the same "page" and "contact me" height */
 }
 
 #footer-contacts h2{
@@ -480,6 +480,7 @@ a:hover {
     
     #footer-content{
         background-color: #171717;
+        width: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
