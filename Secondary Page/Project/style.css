@@ -417,7 +417,6 @@ a:hover {
     justify-content: center;
     background-color: #0e0c0c;
     font-size: 3rem;
-    /*padding: 0rem 0rem 27rem 0rem;*/
     padding: 13.5rem 0;
     align-items: center;
     font-weight: 100;
@@ -451,30 +450,18 @@ a:hover {
 
 /* MENU */
 
-    .menu-itens ul {
-        list-style-type: none;
-        padding-right: 25rem;
-    }
-
     #toggle:checked + .checkbox {
         background-color: white;
         position: fixed;
-        margin-right: 8rem;
+        left: 330px;
     }
 
     #toggle:checked ~ .menu {
-        box-shadow: 0px 0px 0px 1000vmax black;
+        box-shadow: 0px 0px 0px 1100vmax black;
         z-index: 1;
-    }
-
-    #toggle:checked ~ .menu-itens {
-        visibility: visible;
-        opacity: 1;
-        overflow-y: auto;
         position: fixed;
     }
 
-    
 
 /* Footer */
     
@@ -484,27 +471,42 @@ a:hover {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
-        padding: auto;
+        padding: 2rem;
     }
 
     #footer-contacts h2{
         padding-top: 15.3rem;
-        padding-right: 30.1rem;
+        padding-right: 17rem;
         font-size: 1.7rem;
-        letter-spacing: 0px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    #footer-contacts p{
+        padding-right: 7rem;
+        padding-left: 2rem;
+        font-size: 3.5rem;
+    }
+
+    #footer-social-media{
+        padding-left: 1.5rem;
     }
 
     .footer-list h3{
         padding-top: 10rem;
-        padding-right: 17rem;
+        padding-right: 0;
+        font-size: 5rem;
     }
 
     #footer-subscribe h3{
         padding-top: 7rem;
+        padding-right: 0;
+        font-size: 5rem;
     }
 
-    #input-group{
+   #input-group{
         width: 34rem;
+        margin: 0 auto;
     }
 
     #input-group button{
@@ -514,18 +516,14 @@ a:hover {
     #footer-copyright{
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: #0e0c0c;
-        font-size: 4rem;
-        /*font-size: 0.9rem;*/
-        padding: auto;
-        /*padding: 1.5rem;*/
+        font-size: 6rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
         font-weight: 100;
     }
 
-/*#footer-content{
-    grid-template-columns: repeat(1, 1fr);
-    padding: 3rem 2rem;
-}*/
 }
 
 
