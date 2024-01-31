@@ -181,7 +181,7 @@ a:hover {
 }
 
 #toggle:checked+.checkbox {
-    background-color: green;
+    background-color: black;
     position: fixed;
 }
 
@@ -728,7 +728,7 @@ body {
     }
 
     #toggle:checked+.checkbox {
-        background-color: green;
+        background-color: black;
         position: fixed;
         align-items: left;
     }
