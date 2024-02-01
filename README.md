@@ -25,3 +25,7 @@ To explore the portfolio, simply visit [https://theuusc.netlify.app/](https://th
 ## Issues and Feedback
 
 If you encounter any issues while navigating or have feedback to share, please open an issue on my [GitHub repository](https://github.com/theuusc/Portifolio/issues).
+
+## License
+
+This project is under the [MIT license](LICENSE), which means you are free to use, modify, and distribute it.
