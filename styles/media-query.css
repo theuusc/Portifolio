@@ -1,113 +1,79 @@
-/* Mobile */
-
 @media (min-width: 320px) and (max-width: 915px) {
-    /* Adicione as seguintes regras dentro da sua folha de estilo CSS existente */
-
-/* Header */
-.header-container {
-    padding: 0 20px; /* Reduza o preenchimento para telas menores */
-}
-
-h1 {
-    font-size: 3.5rem; /* Reduza o tamanho da fonte */
-}
-
-h2 {
-    font-size: 20px; /* Reduza o tamanho da fonte */
-}
-
-.social-media a {
-    font-size: 1.5rem; /* Reduza o tamanho da fonte */
-    padding: 0.5rem 2rem; /* Ajuste o espaçamento interno */
-}
-
-/* Dropdown language button */
-.dropdown {
-    width: auto; /* Ajuste a largura para se adaptar ao conteúdo */
-    text-align: left; /* Alinhe à esquerda para telas menores */
-    font-weight: bold;
-    position: relative; /* Mude para relativo para reajustar a posição */
-    top: auto; /* Redefina a posição superior */
-    right: auto; /* Redefina a posição à direita */
-    margin-top: 10px; /* Adicione margem superior para espaço */
-}
-
-.dropdown .dropdown-toggle {
-    width: auto; /* Ajuste a largura para se adaptar ao conteúdo */
-    background-color: #0e0c0c;
-}
-
-/* Hamburguer Menu */
-.checkbox-container {
-    padding: 0 20px; /* Reduza o preenchimento para telas menores */
-}
-
-.checkbox {
-    height: 50px; /* Reduza a altura do hamburguer */
-    width: 50px; /* Reduza a largura do hamburguer */
-}
-
-/* Menu itens */
-.menu {
-    top: 10px; /* Ajuste a posição superior */
-    right: 15px; /* Ajuste a posição à direita */
-}
-
-.menu-itens ul li a {
-    font-size: 18px; /* Reduza o tamanho da fonte */
-    margin: 8px 0; /* Ajuste a margem */
-}
-
-/* Bubbles */
-.card-wrapper h2 {
-    font-size: 32px; /* Reduza o tamanho da fonte */
-}
-
-.card-wrapper p {
-    font-size: 16px; /* Reduza o tamanho da fonte */
-}
-
-/* Footer */
-.footer {
-    font-size: 25px; /* Reduza o tamanho da fonte */
-}
-
-#footer-content {
-    padding: 1.5rem; /* Reduza o preenchimento */
-}
-
-/* Ajuste outras propriedades conforme necessário */
-
-/* Adicione a seguinte regra para ajustar a visibilidade do menu hamburguer */
-.checkbox-container {
-    display: flex;
-}
-
-.menu-itens {
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: 400ms ease-in-out 0s;
-}
-
-/* Adicione a seguinte regra para tornar o menu hamburguer visível */
-#toggle:checked~.menu-itens {
-    visibility: visible;
-    opacity: 1;
-}
-
-}
-    
-    
-    
-    @media screen and (max-width: 426px){
-        #footer-content{
-            grid-template-columns: repeat(1, 1fr);
-            padding: 3rem 2rem;
-        }
+    .header-container {
+        padding: 0 10px; 
     }
+    .header-container h1 {
+        margin-top: 25rem; 
+        font-size: 2.5rem;
+    }
+    .header-container h2 {
+        font-size: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .menu-itens ul {
+        gap: 3rem;
+    }
+    .pixar-image {
+        height: 250px; 
+        width: 250px;
+        right: 22%;
+        top: 17%;
+    }
+    .developer-picture {
+        height: 15rem; 
+        width: 15rem;
+        margin-top: 4rem; 
+        margin-bottom: 2rem;
+        margin-left: 6.5rem;
+    }
+    .social-media {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .social-media a {
+        margin-left: 5rem; 
+    }
+    #footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #footer-contacts,
+    .footer-list,
+    #footer-subscribe {
+        flex: 1 1 100%; 
+        margin-bottom: 5rem;
+    }
+
+    #footer-contacts #footer-social-media{
+        padding-left: 6rem;
+    }
+
+    #footer-subscribe {
+        order: 3; 
+    }
+
+    .footer-list {
+        order: 1; 
+    }
+
+    .form-data,
+    textarea {
+        width: calc(100% - 20px); 
+    }
+
+
+    #sendBtn {
+        width: calc(100% - 0px); 
+        margin-top: 2rem;
+        height: 5rem;
+    }
+
+    #footer-copyright {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+
+}
