@@ -548,20 +548,29 @@
 						<div id="footer-subscribe">
 							<h3>Contact me</h3>
 							<form action="./form.php" method="post" target="_blank">
-								<div id="input-group">
-									<input class="form-data" type="text" id="name" name="name" placeholder="Write your name" required>
-								</div>
-								<div id="input-group">
-									<input class="form-data" type="text" id="email" name="email" placeholder="Your E-mail" required>
-								</div>
-								<div id="input-group">
-									<textarea name="message" rows="4" cols="50"></textarea>
-								</div>
-								<div id="input-group">
-									<input class="form-data" type="text" id="subject" name="subject" placeholder="Subject field" required>
-								</div>
-								
-								<button type="submit" class="btn btn-primary" id="sendBtn">Send the message</button>
+								<div class="row g-3">
+									<div class="col-sm-6">
+										<label>Name</label>
+										<input type="text" name="Name" class="form-control" required>
+									</div>
+									<div class="col-6">
+										<label>Email</label>
+										<input type="email" name="Email" class="form-control" required>
+									</div>
+									<div class="col-6">
+										<label>Phone</label>
+										<input type="number" name="Phone" class="form-control" required>
+									</div>
+									<div class="col-6">
+										<label>Subject</label>
+										<input type="text" name="Subject" class="form-control" required>
+									</div>
+									<div class="col-12">
+										<label>Message</label>
+										<input type="text" name="Message" class="form-control" required>
+									</div>
+									<button type="submit" name="BtnSend" class="btn btn-primary" id="sendBtn">Send the message</button>
+								</div>	
 							</form>
   
 						</div>
