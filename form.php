@@ -4,7 +4,7 @@
     $Phone   = $_POST["Phone"];
     $Subject = $_POST["Subject"];
     $Message = $_POST["Message"];
-    $From    = "sctheusmsc@gmail.com";
+    $From    = "https://theuusc.netlify.app/";
 
    
     $Headers  = "MIME-Version: 1.0\n";
