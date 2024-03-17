@@ -1,55 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php
-    /*$name    = $_POST["name"];
-    $Email   = $_POST["email"];
-    $subject = $_POST["subject"];
-    $From    = "https://theuusc.netlify.app/";
-
-    $Headers  = "MIME-Version: 1.0\r\n";
-    $Headers .= "Content-type: text/html; charset=utf-8\r\n";
-    $Headers .= "From: portfolio <$From>\r\n";
-    $Headers .= "Return-Path: $From\r\n";
-    $Headers .= "Reply-to: $Email\r\n";
-
-    mail($name, $subject, $Email, $Headers, $From);
-
-    // Envio do email
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Email enviado com sucesso.";
-    } else {
-        echo "Falha ao enviar o email.";
-    }*/
-
-    $name    = $_POST["name"];
-    $Email   = $_POST["email"];
-    $subject = $_POST["subject"];
+<?php
+    $Name    = $_POST["Name"];
+    $Email   = $_POST["Email"];
+    $Phone   = $_POST["Phone"];
+    $Subject = $_POST["Subject"];
+    $Message = $_POST["Message"];
     $From    = "sctheusmsc@gmail.com";
 
-    $Headers  = "MIME-Version: 1.0\r\n";
-    $Headers .= "Content-type: text/html; charset=utf-8\r\n";
-    $Headers .= "From: portfolio <$From>\r\n";
-    $Headers .= "Return-Path: $From\r\n";
-    $Headers .= "Reply-to: $Email\r\n";
+   
+    $Headers  = "MIME-Version: 1.0\n";
+    $Headers .= "Content-type: text/html; charset=utf-8\n";
+    $Headers .= "From: Portfolio <$From>\n";
+    $Headers .= "Return-Path: $From\n";
+    $Headers .= "Reply-to: $Email\n";
 
-    $message = "Name: $name <br>";
-    $message .= "Email: $Email <br>";
-    $message .= "Subject: $subject <br>";
+    mail($Email, $Subject, $Subject, $Headers, $From);
+?>
 
-    // Envio do email
-    if (mail($From, $subject, $message, $Headers)) {
-        echo "Email enviado com sucesso.";
-    } else {
-        echo "Falha ao enviar o email.";
-    }
-    ?>
-</body>
-</html>
+
 
 
