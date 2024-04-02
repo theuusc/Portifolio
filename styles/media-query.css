@@ -86,4 +86,48 @@
         padding-left: 10rem;
     }
 
+    #footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #footer-contacts,
+    .footer-list,
+    #footer-subscribe {
+        flex: 1 1 100%; 
+        margin-bottom: 5rem;
+    }
+
+    #footer-contacts h2{
+        margin-left: 0rem;
+    }
+
+    #footer-contacts #footer-social-media{
+        padding-left: 6rem;
+    }
+
+    #footer-subscribe {
+        order: 3; 
+    }
+
+    .footer-list {
+        order: 1; 
+    }
+
+    .form-data,
+    textarea {
+        width: calc(100% - 20px); 
+    }
+
+    #sendBtn {
+        width: calc(100% - 0px); 
+        margin-top: 2rem;
+        height: 5rem;
+    }
+    
+    #footer-copyright {
+        text-align: center;
+        font-size: 1rem;
+    }
 }
