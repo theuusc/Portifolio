@@ -1,5 +1,6 @@
 /* Phones */
 
+/* Iphone XR | Samsung Galaxy S20 Ultra*/
 @media(max-width: 450px){
     .dropdown{
         margin-top: 16rem;
@@ -187,4 +188,99 @@
         text-align: center;
         font-size: 1rem;
     }
+}
+
+
+
+/* Samsung Galaxy S8+ */
+@media(max-width: 360px){
+    .dropdown {
+        margin-top: 20rem; 
+        margin-left: -0.2rem; 
+    }
+
+    .pixar-image{
+        height: auto;
+        width: 8rem;
+        right: 7rem;
+        top: 7rem;
+    }
+
+    h1{
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+        margin-left: -11rem;
+    }
+
+    h2{
+        margin-left: -11rem;
+    }
+
+    .social-media a {
+        margin-left: -4rem; 
+    }
+
+    .header-bottom{
+        height: 280vh;
+    }
+
+    .developer-picture{
+        height: auto;
+        width: 8rem;
+        margin-top: 5rem;
+        margin-right: -30rem;
+    }
+
+    .developer-text{
+        margin-top: 30rem;
+        margin-left: 10rem;
+    }
+
+    .h2-sub{
+        margin-left: -1.5rem;
+    }
+
+    .carousel .fa-chevron-left{
+        margin-right: 8rem;
+    }
+
+    .carousel .fa-chevron-right{
+        margin-left: 8rem;
+    }
+
+    .carousel .carousel-item {
+        margin-left: -1rem; 
+    }
+
+    .card-container{
+        margin-left: -10.9rem;
+        margin-bottom: 30rem;
+        margin-top: 5rem;
+    }
+
+    .card-container .card-content h2{
+        padding-left: 11rem;
+    }
+
+    .project-section h2{
+        margin-left: -3.5rem;
+    }
+
+    #grid-container h2{
+        margin-left: -3.9rem;
+    }
+
+    #footer-contacts h2{
+        margin-left: -2.5rem;
+    }
+
+    #footer-contacts p{
+        margin-left: -1.5rem;
+        font-size: 1.7rem;
+    }
+
+    #footer-contacts #footer-social-media{
+        padding-left: 4rem;
+    }
+
 }
