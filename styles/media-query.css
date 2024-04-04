@@ -284,3 +284,43 @@
     }
 
 }
+
+
+@media(max-width: 320px){
+    .dropdown{
+        margin-top: 28rem;
+        margin-bottom: 2.5rem;
+        right: 1.2rem;
+    }
+
+    .pixar-image{
+        height: auto;
+        width: 8rem;
+        right: 5.8rem;
+    }
+
+    h1{
+        margin-top: -2rem;
+        font-size: 1.7rem;
+        margin-left: -12.5rem;
+    }
+
+    h2{
+        font-size: 0.9rem;
+        margin-left: -12.5rem;
+    }
+
+    .social-media a {
+        margin-left: -5rem; 
+        height: 3rem;
+        width: 15rem;
+    }
+
+    .curly-line{
+        height: 25.8rem;
+    }
+
+    .header-bottom{
+        height: 280vh;
+    }
+}
