@@ -209,28 +209,28 @@
     .dropdown{
         margin-top: 28rem;
         margin-bottom: 2.5rem;
-        right: 1.2rem;
+        right: 0.8rem;
     }
 
     .pixar-image{
         height: auto;
         width: 8rem;
-        right: 5.8rem;
+        right: 8.5rem;
     }
 
     h1{
         margin-top: -2rem;
-        font-size: 1.7rem;
-        margin-left: -12.5rem;
+        font-size: 2rem;
+        margin-left: -10rem;
     }
 
     h2{
         font-size: 0.9rem;
-        margin-left: -12.5rem;
+        margin-left: -10.5rem;
     }
 
     .social-media a {
-        margin-left: -5rem; 
+        margin-left: -3rem; 
         height: 3rem;
         width: 15rem;
     }
@@ -239,8 +239,20 @@
         height: 25.8rem;
     }
 
+    .developer-picture{
+        margin-top: 0;
+    }
+
+    .carousel .fa-chevron-left{
+        margin-right: 8rem;
+    }
+
+    .carousel .fa-chevron-right{
+        margin-left: 8rem;
+    }
+
     .header-bottom{
-        height: 280vh;
+        height: 290vh;
     }
 }
 
