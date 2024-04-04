@@ -1,5 +1,19 @@
 /* Phones */
 
+@media(max-width: 768px){
+    .dropdown {
+        margin-top: 10rem; 
+        margin-left: -0.2rem; 
+    }
+
+    .pixar-image{
+        height: auto;
+        width: 10rem;
+        right: 7rem;
+        top: 7rem;
+    }
+}
+
 /* Iphone XR | Samsung Galaxy S20 Ultra*/
 @media(max-width: 450px){
     .dropdown{
@@ -32,6 +46,7 @@
         display: flex;
         flex-wrap: wrap;
     }
+
     .social-media a {
         margin-top: 1rem;
         margin-left: -2rem; 
@@ -190,8 +205,6 @@
     }
 }
 
-
-
 /* Samsung Galaxy S8+ */
 @media(max-width: 360px){
     .dropdown {
@@ -285,8 +298,7 @@
 
 }
 
-
-@media(max-width: 320px){
+@media(max-width: 330px){
     .dropdown{
         margin-top: 28rem;
         margin-bottom: 2.5rem;
@@ -324,3 +336,4 @@
         height: 280vh;
     }
 }
+
