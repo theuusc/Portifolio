@@ -254,6 +254,38 @@
     .header-bottom{
         height: 290vh;
     }
+
+    .carousel .carousel-item {
+        margin-left: -0rem; 
+    }
+
+    .card-container{
+        margin-left: -9.8rem;
+    }
+
+    .card-container .card-content h2{
+        padding-left: 10.7rem;
+    }
+
+    .project-section h2{
+        margin-left: -2.5rem;
+    }
+
+    #grid-container h2{
+        margin-left: -2.7rem;
+    }
+
+    #footer-contacts h2{
+        margin-left: -1.5rem;
+    }
+
+    #footer-contacts p{
+        margin-left: -1.8rem;
+    }
+
+    #footer-contacts #footer-social-media{
+        padding-left: 5rem;
+    }
 }
 
 
