@@ -129,10 +129,99 @@ document.querySelectorAll('.dropdown-item')[0].addEventListener('click', functio
 
 
 /* Form button */
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('#sendBtn').click(function() {
         $('#contact-form').submit();
     });
-});
+});*/
+
+/*let currentSlideIndex = 1;
+showSlide(currentSlideIndex);
+
+function showSlide(index) {
+    const slides = document.getElementsByClassName('second-slider');
+    const dots = document.getElementsByClassName('dot');
+
+    if (index > slides.length) { currentSlideIndex = 1 }
+    if (index < 1) { currentSlideIndex = slides.length }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove('active');
+    }
+
+    slides[currentSlideIndex - 1].style.display = 'block';
+    dots[currentSlideIndex - 1].classList.add('active');
+}
+
+function currentSlide(index) {
+    showSlide(currentSlideIndex = index);
+}
+
+function nextSlide() {
+    showSlide(currentSlideIndex += 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlideIndex -= 1);
+}
+
+setInterval(nextSlide, 5000); */
+
+
+let currentSlideIndex = 1;
+showSlides(currentSlideIndex);
+
+function currentSlide(n) {
+  showSlides(currentSlideIndex = n);
+}
+
+function showSlides(n) {
+  let slides1 = document.querySelectorAll('#slider1 .second-slider');
+  let slides2 = document.querySelectorAll('#slider2 .second-slider');
+  let dots1 = document.querySelectorAll('#slider1 .dot');
+  let dots2 = document.querySelectorAll('#slider2 .dot');
+  
+  if (n > 3) { currentSlideIndex = 1 }
+  if (n < 1) { currentSlideIndex = 3 }
+  
+  slides1.forEach((slide, index) => {
+    slide.classList.remove('active');
+    if (index === currentSlideIndex - 1) {
+      slide.classList.add('active');
+    }
+  });
+
+  slides2.forEach((slide, index) => {
+    slide.classList.remove('active');
+    if (index === currentSlideIndex - 1) {
+      slide.classList.add('active');
+    }
+  });
+  
+  dots1.forEach((dot, index) => {
+    dot.classList.remove('active');
+    if (index === currentSlideIndex - 1) {
+      dot.classList.add('active');
+    }
+  });
+
+  dots2.forEach((dot, index) => {
+    dot.classList.remove('active');
+    if (index === currentSlideIndex - 1) {
+      dot.classList.add('active');
+    }
+  });
+}
+
+// Automatic slide transition every 3 seconds
+setInterval(() => {
+    currentSlideIndex++;
+    showSlides(currentSlideIndex);
+  }, 5000);
+
+
 
 
