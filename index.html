@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-	<meta charshet="utf-8">
+	<meta charshet="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Matheus.com</title>
-	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<title>Matheus's portfolio</title>
+	<link rel="shortcut icon" href="./assets/img/icons/favicon/fav.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	
 	<!-- Bootstrap CSS -->
@@ -31,90 +31,67 @@
 
 <body>
 	<header>
-	<!-- NAVBAR -->
+	<!-- NAVBAR AND HEADER -->
 	<section id="home">
 		<header class="header-container">
-			<!-- Parallax section -->
-			<!--<div class="parallax">-->
 				<div class="header">
-							<!-- NAVBAR -->
+					<!-- NAVBAR -->
 					<nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
-								<div class="container py-3">
-									<button
-										class="navbar-toggler"
-										type="button"
-										data-bs-toggle="collapse"
-										data-bs-target="#navbar-items"
-										aria-controls="navbar-items"
-										aria-expanded="false"
-										aria-label="Toggle navigation">
-										<i class="bi bi-list"></i>
-									</button>
-									<div class="collapse navbar-collapse" id="navbar-items">
-										<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-											<li class="nav-item">
-												<a class="nav-link" href="#home">Início</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#resume">Resumo</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#portfolio">Portfólio</a>
-											</li>
-											<li class="nav-item">
-												<a class="nav-link" href="#contact">Contatos</a>
-											</li>
-										</ul>
-									</div>
-								</div>
+						<div class="container py-3">
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbar-items"
+								aria-controls="navbar-items"
+								aria-expanded="false"
+								aria-label="Toggle navigation">
+								<i class="bi bi-list"></i>
+							</button>
+							<div class="collapse navbar-collapse" id="navbar-items">
+								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" href="#home">Início</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#resume">Resumo</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#portfolio">Portfólio</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#contact">Contatos</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</nav>
 				</div>
 			
-				 	<!--<div class="dropdown">
-						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-							<i class="fa-solid fa-globe" style="color: #1db954;"></i>
-						</button>
-						<ul class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
-						<li><a class="dropdown-item" href="./idiom/index-eng.html">Inglês</a></li>
-						<li><a class="dropdown-item" href="#">Português</a></li>
-						</ul>
-					</div>-->
-					<!-- Idiom button -->
-					<button title="Botão de Idioma" id="language-toggle" aria-label="Trocar idioma">
-						<i class="fas fa-globe"></i>
-					</button>
-					
-					<!-- Acessibility button -->
-					<button title="Botão de Acessibilidade" id="accessibility-toggle" aria-label="Acessibilidade">
-						<i class="fas fa-universal-access"></i>
-					</button>
-				
-
-					<!-- Elements that will be in the home section. -->
-					<img class="pixar-image" src="./img/7.jpeg" alt="AI generated image of the developer">
-					<h1>Matheus Santos</h1>
-					<h2>Desenvolvedor</h2>
-					<div class="social-media">
-						<a href="https://www.linkedin.com/in/theuusc" target="_blank"><i class="devicon-linkedin-plain header-icon"></i></a>
-						<a href="https://github.com/theuusc" target="_blank"><i class="devicon-github-original header-icon"></i></a>
-						<a href="#"><i class="fa-solid fa-ranking-star fa-xl" style="color: #ffffff;"></i></a>
-					</div>
-			<!--</div>-->
+				<!-- HEADER -->
+				<img class="pixar-image" src="./assets/img/developer-img/pixar-pic.jpeg" alt="AI generated image representing the developer">
+				<h1>Matheus Santos</h1>
+				<h2>Desenvolvedor Full Stack</h2>
+				<div class="social-media">
+					<a href="https://www.linkedin.com/in/theuusc" target="_blank"><i class="devicon-linkedin-plain header-icon"></i></a>
+					<a href="https://github.com/theuusc" target="_blank"><i class="devicon-github-original header-icon"></i></a>
+					<a href="#"><i class="fa-solid fa-ranking-star fa-xl" style="color: #ffffff;"></i></a>
+				</div>
 		</header>
 	</section>
 	
-	<!-- HEADER -->
+	<!-- HEADER BOTTOM -->
 	<section id="resume">
 		<section class="header-bottom">
 			<div class="container">
 				<div class="developer-container">
-					<img class="developer-picture" src="./img/dev-pic.png" alt="Developer picture">
+					<img class="developer-picture" src="./assets/img/developer-img/dev-pic.png" alt="Developer picture">
 					<div class="developer-text">
 						<h2>Olá!</h2>
-						<p>Meu nome é Matheus e sou um desenvolvedor full stack júnior.
-							Tenho experiência no desenvolvimento de diversas soluções tecnológicas. 
-						   Minhas prioridades incluem a abordagem mobile-first, designs responsivos, segurança,
-						   fluidez e a compreensão dos requisitos de negócio.
+						<p>Meu nome é Matheus e sou um desenvolvedor full stack júnior apaixonado por criar experiências digitais envolventes.
+						   Ao longo da minha jornada, desenvolvi uma variedade de soluções tecnológicas, desde sites elegantes até softwares
+						   completos. Sempre com um olhar atento para o design responsivo, a segurança e a fluidez da aplicação,
+						   busco transformar ideias em realidades digitais que encantam os usuários.
 						</p>
 					</div>
 				</div>
@@ -239,12 +216,12 @@
 				</div>
 
 				<div class="slider-container">
-					<div class="second-slider-container" id="slider1">
-					  <h2>Informações Principais</h2>
+					<div class="second-slider-container diferencial" id="slider1">
+					  <h2>Diferenciais</h2>
 					  <div class="second-slider active" id="slide1">
 						<div class="second-slider-content">
 						  <div class="second-slider-icon">
-							<img src="./img/graduate-cap.png" alt="graduation hat icon">
+							<img src="./assets/img/icons/general-icons/interface.png" alt="interface icon">
 						  </div>
 						  <div class="second-slider-text">
 							<h3>Interfaces</h3>
@@ -255,7 +232,7 @@
 					  <div class="second-slider" id="slide2">
 						<div class="second-slider-content">
 						  <div class="second-slider-icon">
-							<img src="./img/processo.png" alt="engine Icon">
+							<img src="./assets/img/icons/general-icons/methologie.png" alt="methologie Icon">
 						  </div>
 						  <div class="second-slider-text">
 							<h3>Metodologia</h3>
@@ -266,11 +243,11 @@
 					  <div class="second-slider" id="slide3">
 						<div class="second-slider-content">
 						  <div class="second-slider-icon">
-							<img src="./img/processo.png" alt="engine Icon">
+							<img src="./assets/img/icons/general-icons/coding.png" alt="coding Icon">
 						  </div>
 						  <div class="second-slider-text">
 							<h3>Código</h3>
-							<p>Aplicação das boas práticas do clean code para garantir um código compreensível para futuras atualizações e manutenções.</p>
+							<p>Aplicação do clean code para garantir um código compreensível para futuras atualizações e manutenções.</p>
 						  </div>
 						</div>
 					  </div>
@@ -281,18 +258,18 @@
 					  </div>
 					</div>
 				  
-					<div class="second-slider-container" id="slider2">
-					  <h2>Informações Adicionais</h2>
+					<div class="second-slider-container adicional" id="slider2">
+					  <h2>Adicionais</h2>
 					  <div class="second-slider active" id="slide4">
 						<div class="second-slider-content">
 						  <div class="second-slider-icon">
-							<img src="./img/graduate-cap.png" alt="graduation hat icon">
+							<img src="./assets/img/icons/general-icons/graduation.png" alt="graduation hat icon">
 						  </div>
 						  <div class="second-slider-text">
 							<h3>Formações</h3>
-							<p>Graduação tecnóloga em <strong>Análise e Desenvolvimento de Sistemas.</strong>
+							<p>Graduação em Análise e Desenvolvimento de Sistemas.
 							  <br>
-							  Pós Graduação em <strong>Inteligência Artificial.</strong>
+							  Pós Graduação em Inteligência Artificial.
 							</p>
 						  </div>
 						</div>
@@ -300,22 +277,25 @@
 					  <div class="second-slider" id="slide5">
 						<div class="second-slider-content">
 						  <div class="second-slider-icon">
-							<img src="./img/processo.png" alt="engine Icon">
+							<img src="./assets/img/icons/general-icons/idiom.png" alt="idioms Icon">
 						  </div>
 						  <div class="second-slider-text">
-							<h3>Outras Ferramentas</h3>
-							<p>Pacote Office - Avançado</p>
+							<h3>Idiomas</h3>
+							<p>Português - nativo
+								<br>
+							   Inglês - intermediário
+							</p>
 						  </div>
 						</div>
 					  </div>
 					  <div class="second-slider" id="slide6">
 						<div class="second-slider-content">
 						  <div class="second-slider-icon">
-							<img src="./img/processo.png" alt="engine Icon">
+							<img src="./assets/img/icons/general-icons/engine.png" alt="engine Icon">
 						  </div>
 						  <div class="second-slider-text">
-							<h3>Interfaces</h3>
-							<p>Criação de experiências fluidas e intuitivas que se adaptam perfeitamente a qualquer dispositivo.</p>
+							<h3>Outras Ferramentas</h3>
+							<p>Pacote Office - avançado</p>
 						  </div>
 						</div>
 					  </div>
@@ -326,190 +306,38 @@
 					  </div>
 					</div>
 				  </div>
-				
-				<!--<div class="card-container">
-					<div class="card">
-					  <div class="card-inner">
-						<div class="card-front">
-						  <div class="card-content">
-							<h2>Interfaces</h2>
-							<p>Vire o card!</p>
-						  </div>
-						</div>
-						<div class="card-back">
-						  <div class="card-content">
-							<p>Criação de experiências fluidas e intuitivas que se adaptam perfeitamente a qualquer dispositivo.</p>
-						  </div>
-						</div>
-					  </div>
-					</div>
-					<div class="card">
-						<div class="card-inner">
-						  <div class="card-front">
-							<div class="card-content">
-							  <h2>Metodologia</h2>
-							  <p>Vire o card!</p>
-							</div>
-						  </div>
-						  <div class="card-back">
-							<div class="card-content">
-							  <p>Utilização de metodologias ágeis para garantir um trabalho mais dinâmico com melhoria contínua.</p>
-							</div>
-						  </div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-inner">
-						  <div class="card-front">
-							<div class="card-content">
-							  <h2>Código</h2>
-							  <p>Vire o card!</p>
-							</div>
-						  </div>
-						  <div class="card-back">
-							<div class="card-content">
-							  <p>Aplicação das boas práticas do clean code para garantir um código compreensível para futuras atualizações e manutenções.</p>
-							</div>
-						  </div>
-						</div>
-					</div>
-				</div>-->
-
-				<!--<div class="second-slider-container">
-					<h2>Informações Principais</h2>
-					<div class="second-slider" id="slide1">
-						<div class="second-slider-content">
-							<div class="second-slider-icon">
-								<img src="./img/graduate-cap.png" alt="graduation hat icon">
-							</div>
-							<div class="second-slider-text">
-								<h3>Interfaces</h3>
-								<p>Criação de experiências fluidas e intuitivas que se adaptam perfeitamente a qualquer dispositivo.</p>
-							</div>
-						</div>
-					</div>
-					<div class="second-slider" id="slide2">
-						<div class="second-slider-content">
-							<div class="second-slider-icon">
-								<img src="./img/processo.png" alt="engine Icon">
-							</div>
-							<div class="second-slider-text">
-								<h3>Metodologia</h3>
-								<p>Utilização de metodologias ágeis para garantir um trabalho mais dinâmico com melhoria contínua.</p>
-							</div>
-						</div>
-					</div>
-					<div class="second-slider" id="slide3">
-						<div class="second-slider-content">
-							<div class="second-slider-icon">
-								<img src="./img/processo.png" alt="engine Icon">
-							</div>
-							<div class="second-slider-text">
-								<h3>Código</h3>
-								<p>Aplicação das boas práticas do clean code para garantir um código compreensível para futuras atualizações e manutenções.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="dots">
-					<span class="dot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-				</div>
-
-				<div class="second-slider-container">
-					<h2>Informações Adicionais</h2>
-					<div class="second-slider" id="slide1">
-						<div class="second-slider-content">
-							<div class="second-slider-icon">
-								<img src="./img/graduate-cap.png" alt="graduation hat icon">
-							</div>
-							<div class="second-slider-text">
-								<h3>Formações</h3>
-								<p>Graduação tecnóloga em <strong>Análise e Desenvolvimento de Sistemas.</strong> 
-									<br>
-								   Pós Graduação em <strong>Inteligência Artificial.</strong>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="second-slider" id="slide2">
-						<div class="second-slider-content">
-							<div class="second-slider-icon">
-								<img src="./img/processo.png" alt="engine Icon">
-							</div>
-							<div class="second-slider-text">
-								<h3>Outras Ferramentas</h3>
-								<p>Pacote Office - Avançado</p>
-							</div>
-						</div>
-					</div>
-					<div class="second-slider" id="slide3">
-						<div class="second-slider-content">
-							<div class="second-slider-icon">
-								<img src="./img/processo.png" alt="engine Icon">
-							</div>
-							<div class="second-slider-text">
-								<h3>Interfaces</h3>
-								<p>Criação de experiências fluidas e intuitivas que se adaptam perfeitamente a qualquer dispositivo.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="dots">
-					<span class="dot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-				</div>-->
 		</section>
 	</section>
 
-	<br><br><br><br><br>
-
 	<!-- PROJECTS -->
 	<section id="portfolio">
-
-		<!-- PROJECTS -->
-		<div class="project-section">
-		</div>
         <main class="container" id="grid-container">
             <h2>Portfólio</h2>
             <br>
             <div class="grid">
                 <div>
-                    <img class="image-grid" src="./img/project img/Demortica.png" alt="image representing demortica project">
+                    <img class="image-grid" src="./assets/img/project-img/Demortica.png" alt="image representing demortica project">
 					<h3>Demortica</h3>
-                    <!--<p class="text-grid">
-					 	Website com conteúdo de terror.
-					</p>-->
 					<span class="tech-icon">
-						<!--<img class="tech-icons" src="./img/icons/bootstrap.png" alt="Bootstrap framework icon">-->
 						<span class="tech-icon-text">Bootstrap</span>
 					</span>
 					<span class="tech-icon">
-						<!--<img class="tech-icons" src="./img/icons/js.png" alt="JavaScript programming language icon">-->
 						<span class="tech-icon-text">JavaScript</span>
 					</span>
                     <br>
-                    <a class="link-grid" href="https://demortica.netlify.app/" target="_blank"> Detalhes do projeto </a>
+                    <a class="link-grid" href="./project-details/demortica/demortica.html"> Detalhes do projeto </a>
                 </div>
 
                 <div>
-                    <img class="image-grid" src="./img/project img/primeDrink.jpeg" alt="image representing prime drink project">
+                    <img class="image-grid" src="./assets/img/project-img/PrimeDrink.jpeg" alt="image representing prime drink project">
 					<h3>Prime Drink</h3>
-                    <!--<p class="text-grid">
-						Landing page com receitas de drinks.
-                    </p>-->
 					<span class="tech-icon">
-						<!--<img class="tech-icons" src="./img/icons/html-5.png" alt="html icon">-->
 						<span class="tech-icon-text">HTML5</span>
 					</span>
 					<span class="tech-icon">
-						<!--<img class="tech-icons" src="./img/icons/css-3.png" alt="css icon">-->
 						<span class="tech-icon-text">CSS3</span>
 					</span>
 					<span class="tech-icon">
-						<!--<img class="tech-icons" src="./img/icons/js.png" alt="JavaScript programming language icon">-->
 						<span class="tech-icon-text">JavaScript</span>
 					</span>
                     <br>
@@ -517,13 +345,9 @@
                 </div>
 
 				<div>
-					<img class="image-grid" src="./img/project img/rockPaperScissors.jpeg" alt="image representing rock papers scissors project">
+					<img class="image-grid" src="./assets/img/project-img/RPS.jpeg" alt="image representing RPS project">
 					<h3>RPS</h3>
-					<!--<p class="text-grid">
-						Jogo de Jokenpô contra a máquina.
-					</p>-->
 					<span class="tech-icon">
-						<!--<img class="tech-icons" src="./img/icons/python.png" alt="python programming language icon">-->
 						<span class="tech-icon-text">Python</span>
 					</span>
                     <br>
@@ -531,13 +355,9 @@
 				</div>
 
 				<div>
-					<img class="image-grid" src="./img/project img/volcanoDataset.jpeg" alt="image representing volcano dataset project">
+					<img class="image-grid" src="./assets/img/project-img/VolcanoDataset.jpeg" alt="image representing volcano dataset project">
 					<h3>Volcano Dataset</h3>
-					<!--<p class="text-grid">
-						Análise de dados de atividade vulcânica.
-					</p>-->
 					<span class="tech-icon">
-						<!--<img class="tech-icons" src="./img/icons/python.png" alt="python programming language icon">-->
 						<span class="tech-icon-text">Python</span>
 					</span>
                     <br>
@@ -545,13 +365,9 @@
 				</div>
 
 				<div>
-					<img class="image-grid" src="./img/project img/2.png" alt="image representing timing project">
+					<img class="image-grid" src="./assets/img/project-img/Timing.png" alt="image representing timing project">
 					<h3>Timing</h3>
-					<!--<p class="text-grid">
-						Software de gerenciamento de tarefas.
-					</p>-->
 					<span class="tech-icon">
-						<!--<img class="tech-icons" src="./img/icons/java.png" alt="java programming language icon">-->
 						<span class="tech-icon-text">Java</span>
 					</span>
                     <br>
@@ -559,13 +375,9 @@
 				</div>
 
 				<div>
-					<img class="image-grid" src="./img/project img/playerOne.png" alt="image representing player one project">
+					<img class="image-grid" src="./assets/img/project-img/PlayerOne.png" alt="image representing player one project">
 					<h3>Player One</h3>
-					<!--<p class="text-grid">
-						Protótipo de recomendação de periféricos.
-					</p>-->
 					<span class="tech-icon">
-						<!--<img class="tech-icons" src="./img/icons/figma.png" alt="figma icon">-->
 						<span class="tech-icon-text">Figma</span>
 					</span>
                     <br>
@@ -576,84 +388,83 @@
         </main>
 	</section>
 
-				<!-- FOOTER -->
-			<section id="contact">
-				<footer class="footer">
-					<div id="footer-content">
-						<div id="footer-contacts">
-							<h2>Matheus Santos</h2>
-							<p>Developer</p>
+	<!-- FOOTER -->
+	<section id="contact">
+		<footer class="footer">
+			<div id="footer-content">
+				<div id="footer-contacts">
+					<h2>Matheus Santos</h2>
+					<p>Desenvolvedor Full Stack</p>
 
-							<div id="footer-social-media">
-								<a href="https://www.linkedin.com/in/theuusc" class="footer-link" id="linkedin">
-									<i class="fa-brands fa-linkedin"></i>
-								</a>
+					<div id="footer-social-media">
+						<a href="https://www.linkedin.com/in/theuusc" class="footer-link" id="linkedin">
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
 
-								<a href="https://github.com/theuusc" class="footer-link" id="github">
-									<i class="fa-brands fa-github"></i>
-								</a>
+						<a href="https://github.com/theuusc" class="footer-link" id="github">
+							<i class="fa-brands fa-github"></i>
+						</a>
 
-								<a href="#" class="footer-link" id="hacker-rank">
-									<i class="fa-solid fa-ranking-star" style="color: #ffffff;"></i>
-								</a>
+						<a href="#" class="footer-link" id="hacker-rank">
+							<i class="fa-solid fa-ranking-star" style="color: #ffffff;"></i>
+						</a>
+					</div>
+				</div>
+
+				<ul class="footer-list">
+					<li>
+						<h3>Sessões</h3>
+					</li>
+
+					<li>
+						<a href="#" class="footer-link">Início</a>
+					</li>
+					<li>
+						<a href="#resume" class="footer-link">Resumo</a>
+					</li>
+					<li>
+						<a href="#portfolio" class="footer-link">Portfólio</a>
+					</li>
+					<li>
+						<a href="#contact" class="footer-link">Contatos</a>
+					</li>
+				</ul>
+
+				<div id="footer-subscribe">
+					<h3>Fale Comigo</h3>
+					<form action="./form.php" method="post" target="_blank">
+						<div class="row g-3">
+							<div class="col-sm-6 name">
+								<label>Nome</label>
+								<input type="text" name="Name" class="form-control" required>
 							</div>
-						</div>
+							<div class="col-sm-6 email">
+								<label>Email</label>
+								<input type="email" name="Email" class="form-control" required>
+							</div>
+							<div class="col-sm-6 phone">
+								<label>Celular</label>
+								<input type="number" name="Phone" class="form-control" required>
+							</div>
+							<div class="col-sm-6">
+								<label>Assunto</label>
+								<input type="text" name="Subject" class="form-control" required>
+							</div>
+							<div class="col-12">
+								<label>Mensagem</label>
+								<textarea name="Message" class="form-control" required></textarea>
+							</div>
+							<button type="submit" name="BtnSend" class="btn" id="sendBtn">Enviar a mensagem</button>
+						</div>	
+					</form>
+				</div>
+			</div>
 
-						<ul class="footer-list">
-							<li>
-								<h3>Sessões</h3>
-							</li>
-
-							<li>
-								<a href="#" class="footer-link">Início</a>
-							</li>
-							<li>
-								<a href="#resume" class="footer-link">Resumo</a>
-							</li>
-							<li>
-								<a href="#portfolio" class="footer-link">Portfólio</a>
-							</li>
-							<li>
-								<a href="#contact" class="footer-link">Contatos</a>
-							</li>
-						</ul>
-
-						<div id="footer-subscribe">
-							<h3>Fale Comigo</h3>
-							<form action="./form.php" method="post" target="_blank">
-								<div class="row g-3">
-									<div class="col-sm-6">
-										<label>Nome</label>
-										<input type="text" name="Name" class="form-control" required>
-									</div>
-									<div class="col-sm-6">
-										<label>Email</label>
-										<input type="email" name="Email" class="form-control" required>
-									</div>
-									<div class="col-sm-6">
-										<label>Celular</label>
-										<input type="number" name="Phone" class="form-control" required>
-									</div>
-									<div class="col-sm-6">
-										<label>Assunto</label>
-										<input type="text" name="Subject" class="form-control" required>
-									</div>
-									<div class="col-12">
-										<label>Mensagem</label>
-										<input type="text" name="Message" class="form-control" required>
-									</div>
-									<button type="submit" name="BtnSend" class="btn" id="sendBtn">Enviar a mensagem</button>
-								</div>	
-							</form>
-  
-						</div>
-					</div>
-
-					<div id="footer-copyright">
-						Copyright &copy; 2023 Matheus Santos.
-					</div>
-				</footer>
-			</section>
+			<div id="footer-copyright">
+				Copyright &copy; 2023 Matheus Santos.
+			</div>
+		</footer>
+	</section>
 
 <script src="./scripts/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
